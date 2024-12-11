@@ -132,7 +132,7 @@ fetch(api_url)
       sortElement += '<div class="block">'
       sortElement += `<a href="${json[sortdata[j][1]].url}">`
       sortElement += `<img src="${json[sortdata[j][1]].image}" alt="イメージ画像">`
-      sortElement += `<img src="${json[sortdata[j][1]].deadline}" alt="対象生アイコン">`
+      sortElement += `<img src="${json[sortdata[j][1]].sub}" alt="対象生アイコン">`
       sortElement += `<h3 class="deadline">${json[sortdata[j][1]].deadline}</h3>`
       sortElement += `<p class="title">${json[sortdata[j][1]].title}</p>`
       sortElement += '</a></div>'
