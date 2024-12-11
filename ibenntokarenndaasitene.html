@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--こんにちは。このサイトを作ったtoboというものです。ここまで見てくださりありがとうございます。ごゆっくりどうぞ。-->
+<!--今回、初めて自作サイトというものを作ったので温かい目で見てもらえると嬉しいです。-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町田カレンダー</title>
+
+    <style type="text/css">
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .case {
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+
+        .deadline {
+            color: #000066;
+        }
+
+        .block {
+            width: calc(80% / 4);
+            margin: auto;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header {
+            position: relative;
+            height: 50vh;
+        }
+
+        header {
+            background: url(設定6.png) center / cover;
+        }
+
+        .buttons {
+            margin: 50px auto;
+            width: 210px;
+        }
+
+        .button {
+            width: 100px;
+            height: 30px;
+        }
+
+
+        #day_btn {
+            color: white;
+            background-color: red;
+        }
+
+        #day_btn.active {
+            color: black;
+            background-color: white;
+        }
+
+        #sort_btn {
+            color: black;
+            background-color: white;
+        }
+
+        #sort_btn.active {
+            color: white;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="buttons">
+        <input class="button" id="day_btn" type="button" value="日付順" onclick="change(false);" />
+        <input class="button" id="sort_btn" type="button" value="申込締切順" onclick="change(true);" />
+    </div>
+    <div id="datas_list"></div>
+    <div id="sorts_list"></div>
+    <script src="code.js"></script>
+</body>
+
+</html>
